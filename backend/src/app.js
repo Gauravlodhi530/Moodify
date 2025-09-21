@@ -7,6 +7,9 @@ app.use(cors());
 app.use(express.json())
 
 app.use('/', songRoutes);
+app.use("/", (req, res) => {
+  res.json({ message: "Backend working" });
+});
 
 
 module.exports = app;
