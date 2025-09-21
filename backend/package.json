@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "build": "npm install --prefix frontend && npm run build --prefix frontend"
-
+    "build": "npm install --prefix ../frontend && npm run build --prefix ../frontend",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +18,8 @@
     "imagekit": "^6.0.0",
     "mongoose": "^8.16.4",
     "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
